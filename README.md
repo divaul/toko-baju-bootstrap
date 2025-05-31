@@ -157,7 +157,7 @@ Lihat demo proyek secara langsung di:
 
 Berikut adalah salah satu tampilan dari halaman website:
 
-![Tampilan Halaman](demo/screenshotdemo.png)
+![Tampilan Halaman](demo/screenshot.png)
 
 ## Ringkasan Kode
 
