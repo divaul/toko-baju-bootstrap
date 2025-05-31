@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event - PRESTIGE</title>
+    <link rel="stylesheet" href="page css/lookbook.css" />
+    <link rel="stylesheet" href="page css/dropdown.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"/>
+    <link rel="stylesheet" href="page css/header-custom.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    
+  </head>
+  <body>
+    <header >
+      <div class="container">
+        <div class="logo">
+          <h1>PRESTIGE</h1>
+          <p>Premium Fashion Store</p>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</></li>
+            <li><a href="event.html" >Event</a></li>
+            <li><a href="review-produk.html">Review</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="bi bi-collection-fill" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="koleksi.html" class="dropdown-item">
+                  <i class="fa fa-camera-retro"></i> Koleksi
+                </a>
+                <a href="produk.html" class="dropdown-item">
+                  <i class="fas fa-tshirt"></i> Produk
+                </a>
+               
+              </div>
+            </li>
+
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="bi bi-palette2" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="style-guide.html" class="dropdown-item">
+                  <i class="bi bi-book-fill"></i> Referensi Gaya
+                </a>
+                <a href="inspirasi.html" class="dropdown-item">
+                  <i class="bi bi-lightbulb-fill"></i> Inspirasi
+                </a>
+                <a href="lookbook.html" class="dropdown-item">
+                  <i class="bi bi-images"></i> Galeri
+                </a>
+              </div>
+            </li>
+
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="fas fa-shopping-cart" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="keranjang.html" class="dropdown-item">
+                  <i class="fa fa-cart-plus"></i> Keranjang
+                </a>
+                <a href="checkout.html" class="dropdown-item">
+                  <i class="fas fa-cart-arrow-down"></i> checkout
+                </a>
+              </div>
+            </li>
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="fas fa-user" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="login.html" class="dropdown-item">
+                  <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a href="daftar.html" class="dropdown-item">
+                  <i class="fas fa-user-plus"></i> Daftar
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="account.html" class="dropdown-item">
+                  <i class="fas fa-user-cog"></i> My Account
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Lookbook PRESTIGE</h2>
+            <p>Inspirasi gaya dan koleksi terbaik kami</p>
+        </div>
+    </section>
+
+    <section class="lookbook-categories">
+        <div class="container">
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Semua</button>
+                <button class="filter-btn" data-filter="formal">Formal</button>
+                <button class="filter-btn" data-filter="casual">Casual</button>
+                <button class="filter-btn" data-filter="summer">Summer</button>
+                <button class="filter-btn" data-filter="winter">Winter</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="lookbook-gallery">
+        <div class="container">
+            <div class="row g-4">
+                <!-- Formal Collection -->
+                <div class="col-md-6 col-lg-4 lookbook-item formal">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Formal Look 1.jpg" alt="Formal Look 1" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Elegant Office Attire</h3>
+                                <p>Blazer premium dengan kemeja putih dan celana formal</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal1">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item formal">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Formal Look 2.jpg" alt="Formal Look 2" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Business Meeting</h3>
+                                <p>Setelan jas dengan dasi sutra dan sepatu kulit</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal2">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item formal">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Formal Look 3.jpg" alt="Formal Look 3" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Evening Gala</h3>
+                                <p>Dress malam elegan dengan aksesoris minimalis</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal3">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Casual Collection -->
+                <div class="col-md-6 col-lg-4 lookbook-item casual">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Casual Look 1.jpg" alt="Casual Look 1" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Weekend Casual</h3>
+                                <p>Kemeja casual dengan jeans dan sneakers</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal4">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item casual">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Casual Look 2.jpg" alt="Casual Look 2" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Coffee Date</h3>
+                                <p>Sweater rajut dengan celana chino dan loafers</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal5">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item casual">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Casual Look 3.jpg" alt="Casual Look 3" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Urban Explorer</h3>
+                                <p>Jaket denim dengan t-shirt grafis dan sepatu boots</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal6">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Summer Collection -->
+                <div class="col-md-6 col-lg-4 lookbook-item summer">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Summer Look 1.jpg" alt="Summer Look 1" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Beach Day</h3>
+                                <p>Kemeja linen dengan celana pendek dan sandal</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal7">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item summer">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Summer Look 2.jpg" alt="Summer Look 2" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Resort Wear</h3>
+                                <p>Dress musim panas dengan topi lebar dan sandal espadrille</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal8">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item summer">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Summer Look 3.jpg" alt="Summer Look 3" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Tropical Vibes</h3>
+                                <p>Kemeja motif tropical dengan celana linen dan espadrilles</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal9">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Winter Collection -->
+                <div class="col-md-6 col-lg-4 lookbook-item winter">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Winter Look 1.jpg" alt="Winter Look 1" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Cozy Layers</h3>
+                                <p>Sweater tebal dengan coat wool dan syal rajut</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal10">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item winter">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Winter Look 2.jpg" alt="Winter Look 2" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Winter Elegance</h3>
+                                <p>Dress wool dengan stocking tebal dan boots kulit</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal11">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-6 col-lg-4 lookbook-item winter">
+                    <div class="lookbook-card">
+                        <img src="gambar/gambar produk/Winter Look 3.jpg" alt="Winter Look 3" class="img-fluid">
+                        <div class="lookbook-overlay">
+                            <div class="lookbook-info">
+                                <h3>Alpine Chic</h3>
+                                <p>Jaket puffer dengan turtleneck dan celana wool</p>
+                                <button class="btn-small view-lookbook" data-bs-toggle="modal" data-bs-target="#lookbookModal12">Lihat Detail</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lookbook Detail Modals -->
+    <!-- Modal 1 -->
+    <div class="modal fade" id="lookbookModal1" tabindex="-1" aria-labelledby="lookbookModalLabel1" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lookbookModalLabel1">Elegant Office Attire</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="gambar/gambar produk/Formal Look 1.jpg" alt="Formal Look 1" class="img-fluid">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="lookbook-detail">
+                                <h3>Elegant Office Attire</h3>
+                                <p class="lookbook-description">Tampil profesional dan elegan dengan blazer premium kami yang dipadukan dengan kemeja putih dan celana formal. Sempurna untuk lingkungan kantor atau pertemuan bisnis.</p>
+                                
+                                <div class="lookbook-items">
+                                    <h4>Item dalam Look Ini:</h4>
+                                    <ul>
+                                        <li>
+                                            <span class="item-name">Luxury Blazer</span>
+                                            <span class="item-price">Rp 899.000</span>
+                                            <a href="produk.html" class="item-link">Lihat Detail</a>
+                                        </li>
+                                        <li>
+                                            <span class="item-name">Premium White Shirt</span>
+                                            <span class="item-price">Rp 429.000</span>
+                                            <a href="produk.html" class="item-link">Lihat Detail</a>
+                                        </li>
+                                        <li>
+                                            <span class="item-name">Formal Pants</span>
+                                            <span class="item-price">Rp 549.000</span>
+                                            <a href="produk.html" class="item-link">Lihat Detail</a>
+                                        </li>
+                                        <li>
+                                            <span class="item-name">Leather Oxford Shoes</span>
+                                            <span class="item-price">Rp 1.299.000</span>
+                                            <a href="produk.html" class="item-link">Lihat Detail</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="lookbook-styling-tips">
+                                    <h4>Tips Styling:</h4>
+                                    <ul>
+                                        <li>Pilih kemeja dengan fit yang pas untuk tampilan yang rapi</li>
+                                        <li>Pastikan panjang lengan blazer tepat di pergelangan tangan</li>
+                                        <li>Tambahkan pocket square untuk sentuhan elegan</li>
+                                        <li>Sepatu harus selalu bersih dan dipoles</li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="lookbook-actions">
+                                    <a href="#" class="btn">Beli Semua Item</a>
+                                    <a href="#" class="btn-light">Simpan Look</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 2 - Simplified for brevity, in real implementation all modals would be complete -->
+    <div class="modal fade" id="lookbookModal2" tabindex="-1" aria-labelledby="lookbookModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="lookbookModalLabel2">Business Meeting</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <img src="gambar/gambar produk/Formal Look 2.jpg" alt="Formal Look 2" class="img-fluid">
+                        </div>
+                        <div class="col-md-5">
+                            <div class="lookbook-detail">
+                                <h3>Business Meeting</h3>
+                                <p class="lookbook-description">Setelan jas dengan dasi sutra dan sepatu kulit untuk tampilan bisnis yang sempurna. Ideal untuk pertemuan penting atau presentasi.</p>
+                                
+                                <div class="lookbook-items">
+                                    <h4>Item dalam Look Ini:</h4>
+                                    <ul>
+                                        <li>
+                                            <span class="item-name">Premium Suit</span>
+                                            <span class="item-price">Rp 1.899.000</span>
+                                            <a href="produk.html" class="item-link">Lihat Detail</a>
+                                        </li>
+                                        <li>
+                                            <span class="item-name">Silk Tie</span>
+                                            <span class="item-price">Rp 199.000</span>
+                                            <a href="produk.html" class="item-link">Lihat Detail</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                
+                                <div class="lookbook-actions">
+                                    <a href="#" class="btn">Beli Semua Item</a>
+                                    <a href="#" class="btn-light">Simpan Look</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional modals would be implemented for each lookbook item -->
+
+    <section class="lookbook-inspiration">
+        <div class="container">
+            <h2 class="section-title">Inspirasi Gaya</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="inspiration-content">
+                        <h3>Bagaimana Memadukan Pakaian Anda</h3>
+                        <p>Memadukan pakaian dengan tepat adalah kunci untuk tampil stylish dan percaya diri. Berikut beberapa tips dasar yang dapat membantu Anda menciptakan look yang harmonis:</p>
+                        <ul class="inspiration-tips">
+                            <li><i class="fas fa-check"></i> Perhatikan keseimbangan warna dan tekstur</li>
+                            <li><i class="fas fa-check"></i> Pilih satu focal point dalam outfit Anda</li>
+                            <li><i class="fas fa-check"></i> Sesuaikan dengan bentuk tubuh dan kepribadian Anda</li>
+                            <li><i class="fas fa-check"></i> Investasikan pada item dasar berkualitas tinggi</li>
+                            <li><i class="fas fa-check"></i> Aksesori dapat mengubah tampilan sederhana menjadi istimewa</li>
+                        </ul>
+                        <a href="style-guide.html" class="btn">Lihat Style Guide</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="inspiration-image">
+                        <img src="gambar/gambar produk/Style Guide.jpg" alt="Style Inspiration" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="lookbook-share">
+        <div class="container">
+            <div class="share-content">
+                <h2>Bagikan Gaya Anda</h2>
+                <p>Tunjukkan bagaimana Anda mengenakan koleksi PRESTIGE dan dapatkan kesempatan untuk ditampilkan di lookbook kami</p>
+                <div class="social-share">
+                    <a href="#" class="social-btn"><i class="fab fa-instagram"></i> Instagram</a>
+                    <a href="#" class="social-btn"><i class="fab fa-facebook"></i> Facebook</a>
+                    <a href="#" class="social-btn"><i class="fab fa-twitter"></i> Twitter</a>
+                </div>
+                <p class="hashtag">#PRESITGEStyle #MyPRESTIGELook</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRESTIGE</h3>
+                    <p>Fashion premium untuk tampilan elegan dan berkelas. Kualitas terbaik untuk gaya hidup Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="koleksi.html">Koleksi</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Fashion No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prestige.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2015 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/dropdown.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Hamburger menu
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.querySelector('nav');
+            
+            hamburger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+            
+            // Lookbook filtering
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const lookbookItems = document.querySelectorAll('.lookbook-item');
+            
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class from all buttons
+                    filterBtns.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to clicked button
+                    btn.classList.add('active');
+                    
+                    // Get filter value
+                    const filterValue = btn.getAttribute('data-filter');
+                    
+                    // Filter lookbook items
+                    lookbookItems.forEach(item => {
+                        if (filterValue === 'all' || item.classList.contains(filterValue)) {
+                            item.style.display = 'block';
+                        } else {
+                            item.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Produk - PRESTIGE</title>
+    <link rel="stylesheet" href="page css/review-produk.css">
+    <link rel="stylesheet" href="page css/dropdown.css">
+    <link rel="stylesheet" href="page css/header-custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <header >
+      <div class="container">
+        <div class="logo">
+          <h1>PRESTIGE</h1>
+          <p>Premium Fashion Store</p>
+        </div>
+        <div class="hamburger" id="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="index.html">Beranda</></li>
+            <li><a href="event.html" >Event</a></li>
+            <li><a href="review-produk.html" class="active">Review</a></li>
+            <li><a href="tentang-kami.html">Tentang Kami</a></li>
+            <li><a href="kontak.html">Kontak</a></li>
+            
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="bi bi-collection-fill" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="koleksi.html" class="dropdown-item">
+                  <i class="fa fa-camera-retro"></i> Koleksi
+                </a>
+                <a href="produk.html" class="dropdown-item">
+                  <i class="fas fa-tshirt"></i> Produk
+                </a>
+               
+              </div>
+            </li>
+
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="bi bi-palette2" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="style-guide.html" class="dropdown-item">
+                  <i class="bi bi-book-fill"></i> Referensi Gaya
+                </a>
+                <a href="inspirasi.html" class="dropdown-item">
+                  <i class="bi bi-lightbulb-fill"></i> Inspirasi
+                </a>
+                <a href="lookbook.html" class="dropdown-item">
+                  <i class="bi bi-images"></i> Galeri
+                </a>
+              </div>
+            </li>
+
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="fas fa-shopping-cart" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="keranjang.html" class="dropdown-item">
+                  <i class="fa fa-cart-plus"></i> Keranjang
+                </a>
+                <a href="checkout.html" class="dropdown-item">
+                  <i class="fas fa-cart-arrow-down"></i> checkout
+                </a>
+              </div>
+            </li>
+            <li class="account-menu">
+              <a href="#" class="account-trigger">
+                <i class="fas fa-user" style="font-size: 20px"></i>
+              </a>
+              <div class="account-dropdown">
+                <a href="login.html" class="dropdown-item">
+                  <i class="fas fa-sign-in-alt"></i> Login
+                </a>
+                <a href="daftar.html" class="dropdown-item">
+                  <i class="fas fa-user-plus"></i> Daftar
+                </a>
+                <div class="dropdown-divider"></div>
+                <a href="account.html" class="dropdown-item">
+                  <i class="fas fa-user-cog"></i> My Account
+                </a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="page-header">
+        <div class="container">
+            <h2>Review Produk PRESTIGE</h2>
+            <p>Pengalaman nyata pelanggan dengan produk kami</p>
+        </div>
+    </section>
+
+    <section class="review-intro">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="intro-content">
+                        <h3>Ulasan Jujur dari Pelanggan Kami</h3>
+                        <p>Di PRESTIGE, kami percaya bahwa pengalaman pelanggan adalah hal terpenting. Kami bangga dengan kualitas produk kami dan senang berbagi pengalaman nyata dari pelanggan yang telah membeli dan menggunakan produk PRESTIGE.</p>
+                        <p>Semua ulasan di bawah ini adalah pengalaman asli dari pelanggan kami. Kami menghargai setiap masukan, baik positif maupun konstruktif, karena hal ini membantu kami terus meningkatkan kualitas dan layanan.</p>
+                        <div class="review-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">4.8</span>
+                                <span class="stat-label">Rating Rata-rata</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Pelanggan Puas</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">1200+</span>
+                                <span class="stat-label">Total Review</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="intro-image">
+                        <img src="gambar/gambar produk/Customer Reviews.jpg" alt="Customer Reviews" class="img-fluid rounded">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-filter">
+        <div class="container">
+            <div class="filter-container">
+                <div class="filter-group">
+                    <label for="categoryFilter">Kategori:</label>
+                    <select id="categoryFilter" class="form-select">
+                        <option value="all">Semua Kategori</option>
+                        <option value="formal">Formal</option>
+                        <option value="casual">Casual</option>
+                        <option value="accessories">Aksesoris</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="ratingFilter">Rating:</label>
+                    <select id="ratingFilter" class="form-select">
+                        <option value="all">Semua Rating</option>
+                        <option value="5">5 Bintang</option>
+                        <option value="4">4 Bintang</option>
+                        <option value="3">3 Bintang</option>
+                        <option value="2">2 Bintang</option>
+                        <option value="1">1 Bintang</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="sortFilter">Urutkan:</label>
+                    <select id="sortFilter" class="form-select">
+                        <option value="newest">Terbaru</option>
+                        <option value="oldest">Terlama</option>
+                        <option value="highest">Rating Tertinggi</option>
+                        <option value="lowest">Rating Terendah</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="review-list">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="gambar/user/userp.png" alt="Avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Anita Wijaya</h4>
+                                    <p class="review-date">15 Mei 2025</p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Luxury Blazer</h5>
+                                <div class="product-category">Formal</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-value">5.0</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Blazer ini benar-benar luar biasa! Bahannya sangat berkualitas dan jahitannya rapi. Saya sudah mencoba banyak blazer dari brand lain, tapi ini adalah yang terbaik. Pas di badan dan memberikan tampilan yang sangat profesional. Saya mendapat banyak pujian saat mengenakannya di meeting penting. Worth every penny!</p>
+                        </div>
+                        <div class="review-images">
+                            <img src="gambar/gambar produk/Blazer Premium.png" alt="Review Image">
+                            <img src="gambar/gambar produk/1.png" alt="Review Image">
+                            <img src="gambar/gambar produk/2.png" alt="Review Image">
+                        </div>
+                        <div class="review-footer">
+                            <div class="helpful-count">
+                                <button class="helpful-btn"><i class="far fa-thumbs-up"></i> Membantu (24)</button>
+                            </div>
+                            <a href="produk.html" class="view-product">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 2 -->
+                <div class="col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="gambar/user/userl.png" alt="Avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Budi Santoso</h4>
+                                    <p class="review-date">10 Mei 2025</p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Formal Shirt</h5>
+                                <div class="product-category">Formal</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-value">4.0</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Kemeja formal ini sangat nyaman dipakai seharian di kantor. Bahannya breathable dan tidak mudah kusut. Saya suka dengan cutting-nya yang pas di badan, tidak terlalu ketat atau terlalu longgar. Satu-satunya kekurangan adalah warnanya sedikit berbeda dari yang di foto, tapi masih dalam batas wajar. Overall, saya puas dengan pembelian ini.</p>
+                        </div>
+                        <div class="review-footer">
+                            <div class="helpful-count">
+                                <button class="helpful-btn"><i class="far fa-thumbs-up"></i> Membantu (18)</button>
+                            </div>
+                            <a href="produk.html" class="view-product">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 3 -->
+                <div class="col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="gambar/user/userp.png" alt="Avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Citra Dewi</h4>
+                                    <p class="review-date">5 Mei 2025</p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Dress Elegant</h5>
+                                <div class="product-category">Formal</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                            <span class="rating-value">4.5</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Dress ini benar-benar elegan dan membuat saya merasa percaya diri saat menghadiri acara formal. Bahannya berkualitas tinggi dan jatuhnya sangat bagus di badan. Saya mendapat banyak pujian saat memakainya. Ukurannya juga pas sesuai size chart. Satu-satunya masukan adalah mungkin bisa ditambahkan varian warna lain karena saya ingin membeli lagi dengan warna berbeda!</p>
+                        </div>
+                        <div class="review-images">
+                            <img src="gambar/gambar produk/Dress Elegant.png" alt="Review Image">
+                        </div>
+                        <div class="review-footer">
+                            <div class="helpful-count">
+                                <button class="helpful-btn"><i class="far fa-thumbs-up"></i> Membantu (32)</button>
+                            </div>
+                            <a href="produk.html" class="view-product">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 4 -->
+                <div class="col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="gambar/user/userl.png" alt="Avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Dimas Pratama</h4>
+                                    <p class="review-date">28 April 2025</p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Casual Set</h5>
+                                <div class="product-category">Casual</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-value">3.0</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Casual set ini cukup nyaman dipakai untuk aktivitas sehari-hari. Bahannya lembut dan tidak panas. Namun, setelah beberapa kali dicuci, warnanya sedikit pudar. Saya juga merasa ukurannya agak lebih kecil dari yang diharapkan. Mungkin sebaiknya order satu ukuran lebih besar dari biasanya. Secara keseluruhan masih ok untuk harganya.</p>
+                        </div>
+                        <div class="review-footer">
+                            <div class="helpful-count">
+                                <button class="helpful-btn"><i class="far fa-thumbs-up"></i> Membantu (15)</button>
+                            </div>
+                            <a href="produk.html" class="view-product">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 5 -->
+                <div class="col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="gambar/user/userl.png" alt="Avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Agus Suyatno</h4>
+                                    <p class="review-date">20 April 2025</p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Silk Tie</h5>
+                                <div class="product-category">Accessories</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <span class="rating-value">5.0</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Saya membeli celana jeans ini sebagai hadiah untuk suami saya, dan dia sangat menyukainya! Kualitasnya luar biasa, teksturnya halus, dan warnanya elegan. Dasi ini memberikan sentuhan sempurna untuk pakaian formal suami saya. Packaging-nya juga sangat bagus dan cocok untuk hadiah. Sangat merekomendasikan produk ini!</p>
+                        </div>
+                        <div class="review-images">
+                           
+                            <img src="gambar/gambar produk/Casual Style.jpg" alt="Review Image">
+                        </div>
+                        <div class="review-footer">
+                            <div class="helpful-count">
+                                <button class="helpful-btn"><i class="far fa-thumbs-up"></i> Membantu (27)</button>
+                            </div>
+                            <a href="produk.html" class="view-product">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Review 6 -->
+                <div class="col-md-6 mb-4">
+                    <div class="review-card">
+                        <div class="review-header">
+                            <div class="reviewer-info">
+                                <div class="reviewer-avatar">
+                                    <img src="gambar/user/userl.png" alt="Avatar">
+                                </div>
+                                <div class="reviewer-details">
+                                    <h4>Fajar Ramadhan</h4>
+                                    <p class="review-date">15 April 2025</p>
+                                </div>
+                            </div>
+                            <div class="product-info">
+                                <h5>Formal Pants</h5>
+                                <div class="product-category">Formal</div>
+                            </div>
+                        </div>
+                        <div class="review-rating">
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </div>
+                            <span class="rating-value">4.0</span>
+                        </div>
+                        <div class="review-content">
+                            <p>Celana formal ini sangat nyaman dipakai seharian di kantor. Bahannya berkualitas dan tidak mudah kusut. Potongannya slim fit tapi tidak terlalu ketat, sehingga tetap nyaman saat duduk lama. Saya suka dengan detail jahitannya yang rapi. Satu-satunya masukan adalah kantongnya agak dangkal, jadi hati-hati saat menyimpan barang di sana.</p>
+                        </div>
+                        <div class="review-footer">
+                            <div class="helpful-count">
+                                <button class="helpful-btn"><i class="far fa-thumbs-up"></i> Membantu (19)</button>
+                            </div>
+                            <a href="produk.html" class="view-product">Lihat Produk</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="pagination-container">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                                <i class="fas fa-chevron-left"></i>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                <i class="fas fa-chevron-right"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <section class="write-review">
+        <div class="container">
+            <div class="write-review-content">
+                <h2>Bagikan Pengalaman Anda</h2>
+                <p>Sudah mencoba produk PRESTIGE? Bagikan pengalaman Anda dan bantu pelanggan lain membuat keputusan yang tepat.</p>
+                <a href="#" class="btn">Tulis Review</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>PRESTIGE</h3>
+                    <p>Fashion premium untuk tampilan elegan dan berkelas. Kualitas terbaik untuk gaya hidup Anda.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Navigasi</h3>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="koleksi.html">Koleksi</a></li>
+                        <li><a href="produk.html">Produk</a></li>
+                        <li><a href="event.html">Event</a></li>
+                        <li><a href="lookbook.html">Lookbook</a></li>
+                        <li><a href="tentang.html">Tentang Kami</a></li>
+                        <li><a href="kontak.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <p><i class="fas fa-map-marker-alt"></i> Jl. Fashion No. 123, Jakarta</p>
+                    <p><i class="fas fa-phone"></i> +62 123 4567 890</p>
+                    <p><i class="fas fa-envelope"></i> info@prestige.id</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Ikuti Kami</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-tiktok"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2015 PRESTIGE. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script/dropdown.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const hamburger = document.getElementById('hamburger');
+            const nav = document.querySelector('nav');
+            
+            hamburger.addEventListener('click', function() {
+                nav.classList.toggle('active');
+            });
+            
+            // Filter functionality would be implemented here in a real project
+            const categoryFilter = document.getElementById('categoryFilter');
+            const ratingFilter = document.getElementById('ratingFilter');
+            const sortFilter = document.getElementById('sortFilter');
+            
+            // Example of filter change event
+            categoryFilter.addEventListener('change', function() {
+                // Filter logic would go here
+                console.log('Category filter changed to: ' + this.value);
+            });
+            
+            // Helpful button functionality
+            const helpfulBtns = document.querySelectorAll('.helpful-btn');
+            
+            helpfulBtns.forEach(btn => {
+                btn.addEventListener('click', function() {
+                    // In a real implementation, this would send an AJAX request
+                    // For now, just toggle the active class
+                    this.classList.toggle('active');
+                    
+                    // Update the count text (this is just for demo)
+                    const currentText = this.textContent;
+                    const countMatch = currentText.match(/\((\d+)\)/);
+                    if (countMatch) {
+                        const currentCount = parseInt(countMatch[1]);
+                        const newCount = this.classList.contains('active') ? currentCount + 1 : currentCount - 1;
+                        this.innerHTML = `<i class="far fa-thumbs-up"></i> Membantu (${newCount})`;
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

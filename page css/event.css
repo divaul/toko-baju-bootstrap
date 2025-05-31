@@ -1,0 +1,606 @@
+/* 
+* Event Page Styles
+* PRESTIGE Fashion Store
+*/
+
+/* Import base styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.section-title:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background-color: #a67c52;
+}
+
+/* ======= BUTTONS ======= */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #a67c52;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #8a6642;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.btn-small {
+    padding: 8px 20px;
+    font-size: 0.9rem;
+}
+
+/* ======= HEADER ======= */
+
+
+header {
+    background-color: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 15px;
+}
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 0;
+    letter-spacing: 1px;
+}
+
+.logo p {
+    font-size: 14px;
+    color: #a67c52;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+}
+
+nav ul li {
+    margin-left: 30px;
+}
+
+nav ul li a {
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding-bottom: 5px;
+    position: relative;
+}
+
+nav ul li a:after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #a67c52;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover:after,
+nav ul li a.active:after {
+    width: 100%;
+}
+
+nav ul li a.active {
+    color: #a67c52;
+}
+
+/* ======= PAGE HEADER ======= */
+.page-header {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.page-header h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.page-header p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+/* ======= FEATURED EVENT CAROUSEL ======= */
+.featured-event {
+    padding: 60px 0;
+    background-color: #fff;
+}
+
+.carousel-content {
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+
+.carousel-text {
+    flex: 1;
+    padding: 0 30px;
+}
+
+.carousel-image {
+    flex: 1;
+    height: 100%;
+}
+
+.carousel-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.event-date {
+    display: inline-block;
+    background-color: #a67c52;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+}
+
+.carousel-text h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.carousel-text p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(166, 124, 82, 0.7);
+    border-radius: 50%;
+    padding: 25px;
+}
+
+.carousel-indicators button {
+    background-color: #a67c52;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+
+/* ======= UPCOMING EVENTS ======= */
+.upcoming-events {
+    padding: 80px 0;
+    background-color: #f9f9f9;
+}
+
+.event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.event-image {
+    position: relative;
+    height: 200px;
+}
+
+.event-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.event-date-badge {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #a67c52;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    min-width: 60px;
+}
+
+.event-date-badge .day {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.event-date-badge .month {
+    display: block;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.event-info {
+    padding: 20px;
+}
+
+.event-info h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.event-location, .event-time {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.event-location i, .event-time i {
+    color: #a67c52;
+    margin-right: 5px;
+}
+
+.event-description {
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* ======= PAST EVENTS ======= */
+.past-events {
+    padding: 80px 0;
+    background-color: #fff;
+}
+
+.past-event-card {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.past-event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.card-body {
+    padding: 20px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-body .event-date {
+    margin-bottom: 10px;
+}
+
+.card-body h3 {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+.event-gallery {
+    margin-top: auto;
+}
+
+.gallery-link {
+    color: #a67c52;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+}
+
+.gallery-link i {
+    margin-left: 5px;
+}
+
+.gallery-link:hover {
+    color: #8a6642;
+}
+
+/* ======= EVENT REGISTRATION ======= */
+.event-registration {
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.registration-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.registration-content h2 {
+    margin-bottom: 15px;
+}
+
+.registration-content p {
+    margin-bottom: 30px;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    height: 50px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 0 15px;
+    font-size: 1rem;
+}
+
+.form-control:focus {
+    border-color: #a67c52;
+    box-shadow: 0 0 0 0.2rem rgba(166, 124, 82, 0.25);
+}
+
+/* ======= FOOTER ======= */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 80px 0 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-section h3 {
+    color: #fff;
+    font-size: 1.3rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.footer-section h3:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #a67c52;
+}
+
+.footer-section p, .footer-section li {
+    margin-bottom: 10px;
+    color: #aaa;
+}
+
+.footer-section a {
+    color: #aaa;
+}
+
+.footer-section a:hover {
+    color: #a67c52;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.social-icons a:hover {
+    background-color: #a67c52;
+    transform: translateY(-3px);
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #777;
+}
+
+/* hamburger menu */
+.hamburger {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+/* ======= RESPONSIVE DESIGN ======= */
+@media (max-width: 1200px) {
+    .carousel-content {
+        height: auto;
+        flex-direction: column;
+    }
+    
+    .carousel-text, .carousel-image {
+        width: 100%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logo {
+        margin-bottom: 0;
+        text-align: left;
+        width: auto;
+    }
+    
+    nav {
+        display: none;
+        width: 100%;
+        order: 3;
+    }
+    
+    nav.active {
+        display: block;
+    }
+    
+    nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    nav ul li {
+        margin: 0;
+        padding: 10px 0;
+        border-bottom: 1px solid #eee;
+    }
+    
+    .hamburger {
+        display: block;
+    }
+    
+    .account-menu {
+        position: relative;
+    }
+    
+    .account-dropdown {
+        position: static;
+        display: none;
+        box-shadow: none;
+    }
+    
+    .account-menu:hover .account-dropdown {
+        display: block;
+    }
+    
+    .carousel-content {
+        padding: 20px 0;
+    }
+    
+    .carousel-text h2 {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .page-header h2 {
+        font-size: 2rem;
+    }
+    
+    .carousel-text h2 {
+        font-size: 1.5rem;
+    }
+    
+    .event-date-badge {
+        min-width: 50px;
+        padding: 5px;
+    }
+    
+    .event-date-badge .day {
+        font-size: 1.2rem;
+    }
+}
